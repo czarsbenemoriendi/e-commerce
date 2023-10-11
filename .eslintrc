@@ -1,0 +1,76 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "parserOptions": {
+    "project": ["./tsconfig.json"],
+    "extraFileExtensions": [".vue"]
+  },
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:import/recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:promise/recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:vuejs-accessibility/recommended",
+    "prettier"
+  ],
+  "plugins": ["promise", "sonarjs", "vuejs-accessibility"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": ".nuxt/tsconfig.json"
+      }
+    }
+  },
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "sibling",
+          "parent",
+          "index",
+          "object",
+          "type"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "@typescript-eslint/consistent-type-exports": "error",
+    "@typescript-eslint/consistent-type-imports": "error",
+    "space-before-function-paren": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/no-setup-props-destructure": "off",
+    "vue/first-attribute-linebreak": "off"
+  },
+  "overrides": [
+    {
+      "files": ["./test/**/*.ts"],
+      "rules": {
+        "promise/catch-or-return": "off",
+        "promise/always-return": "off",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-namespace": "off"
+      }
+    }
+  ]
+}

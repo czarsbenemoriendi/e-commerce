@@ -1,0 +1,36 @@
+### Macbook files
+.DS_Store
+### JetBrains template
+.idea
+
+### VisualStudioCode template
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+### Node template
+# Logs
+logs
+*.log*
+
+
+#  Part for Nuxt
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+.DS_Store
+
+#  Part for tests
+test/cypress/screenshots
+test/cypress/videos

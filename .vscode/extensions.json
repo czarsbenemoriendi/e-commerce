@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-rename-tag",
+    "mhutchie.git-graph",
+    "ms-vsliveshare.vsliveshare",
+    "vue.volar",
+    "yoavbls.pretty-ts-errors"
+
+  ]
+}

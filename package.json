@@ -1,0 +1,50 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "lift": "pnpm -g add pnpm && pnpm install",
+    "dev": "nuxt dev",
+    "test:dev": "cypress open",
+    "lint": "prettier --log-level warn --write . && eslint src/ test/ --fix",
+    "test": "cypress run",
+    "upgrade:list": "pnpm up -i -L",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "deploy": "firebase deploy",
+    "build": "nuxt build",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/ui": "^2.9.0",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "@pinia/nuxt": "^0.4.11",
+    "@types/node": "^20.8.4",
+    "@vueuse/rxjs": "^10.5.0",
+    "cypress": "^13.3.0",
+    "cypress-vite": "^1.4.2",
+    "dexie": "^3.2.4",
+    "eslint": "^8.51.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "npm:eslint-plugin-i@2.28.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-sonarjs": "^0.21.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "eslint-plugin-vuejs-accessibility": "^2.2.0",
+    "nuxt": "3.7.4",
+    "pinia": "^2.1.6",
+    "prettier": "^3.0.3",
+    "rxjs": "^7.8.1",
+    "sort-imports": "^1.1.0",
+    "typescript": "^5.2.2",
+    "vite-svg-loader": "^4.0.0",
+    "vuefire": "^3.1.17",
+    "zod": "^3.22.4"
+  },
+  "resolutions": {
+    "h3": "1.8.1"
+  }
+}

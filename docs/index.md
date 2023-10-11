@@ -1,0 +1,3 @@
+# Documentation
+
+## [Contributing](contributing.md)
