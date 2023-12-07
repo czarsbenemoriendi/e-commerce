@@ -12,11 +12,7 @@ export default defineNuxtConfig({
   imports: {
     autoImport: false,
   },
-  modules: [
-    '@nuxt/ui',
-    '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
-  ],
+  modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', '@pinia/nuxt'],
   srcDir: 'src/',
   ssr: false,
   tailwindcss: {
