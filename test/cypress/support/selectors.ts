@@ -27,8 +27,9 @@ const addSelectorCommand = (
           { log: false },
         )
       } else {
-        chainableElement = cy.get(`[${dataAttribute}="${selector}"]`, 
-        { log: false })
+        chainableElement = cy.get(`[${dataAttribute}="${selector}"]`, {
+          log: false,
+        })
       }
 
       chainableElement.then(($el) => {
