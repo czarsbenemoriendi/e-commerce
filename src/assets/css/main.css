@@ -14,7 +14,7 @@
 }
 @font-face {
   font-family: 'NunitoSansBold';
-  src: url('/fonts/NunitoSans-Bold.tetf') format('truetype');
+  src: url('/fonts/NunitoSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: bold;
 }
@@ -23,4 +23,14 @@
   src: url('/fonts/NunitoSans-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: semi-bold;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
