@@ -8,6 +8,9 @@ export default {
   content: ['./src/**/*.vue'],
   theme: {
     extend: {
+      colors: {
+        buttonType: '#FE724C',
+      },
       fontFamily: {
         Roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
         NunitoSans: ['NunitoSans', sansSerif],
