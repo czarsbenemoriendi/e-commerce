@@ -2,8 +2,10 @@
 import { Icon } from '@components'
 </script>
 <template>
-  <section
-    class="shadow-md rounded-2xl overflow-hidden min-w-[200px] max-w-[250px] max-h-[250px]"
+  <NuxtLink
+    to="/meals/1"
+    class="shadow-md rounded-lg overflow-hidden min-w-[200px] max-w-[250px] max-h-[250px]"
+    data-class="featured-meal"
   >
     <header class="flex flex-shrink-0 relative aspect-[5/2.5] w-full">
       <img
@@ -26,5 +28,5 @@ import { Icon } from '@components'
         </li>
       </ul>
     </section>
-  </section>
+  </NuxtLink>
 </template>
