@@ -18,6 +18,7 @@ import { NAVIGATION } from '@config'
           rel="noopener noreferrer"
           class="flex flex-col items-center justify-center h-full"
           data-class="bottom-button"
+          :data-id="icon + '-button'"
         >
           <Icon v-if="icon" :name="icon" size="lg" />
           <span class="text-sm">{{ name }}</span>
