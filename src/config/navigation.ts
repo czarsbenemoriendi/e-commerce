@@ -8,7 +8,7 @@ type NavigationLink = Readonly<{
 
 export const NAVIGATION: Readonly<NavigationLink[]> = [
   { name: 'Polubione', path: '/liked', icon: 'likedItems' },
-  { name: 'Menu', path: '/menu', icon: 'menu' },
+  { name: 'Dashboard', path: '/', icon: 'dashBoard' },
   { name: 'Losowe danie', path: '/random-meal', icon: 'randomItem' },
   { name: 'Dodaj danie', path: '/add-meal', icon: 'meat' },
 ] as const
