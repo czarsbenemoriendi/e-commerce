@@ -6,7 +6,7 @@ import vitePreprocessor from 'cypress-vite'
 export default defineConfig({
   downloadsFolder: 'test/cypress/downloads',
   e2e: {
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'http://localhost:3000/',
     setupNodeEvents(on /*, config */) {
       on(
         'file:preprocessor',
