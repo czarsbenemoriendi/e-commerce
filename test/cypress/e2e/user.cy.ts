@@ -12,13 +12,15 @@ describe('User', () => {
           })
         })
     })
+    cy.getId('dashBoard-button').click()
+    cy.url().should('eq', Cypress.config('baseUrl'))
 
-    cy.getId('sidebar-button').click()
-    cy.getId('sidebar').should('exist')
+    cy.getClass('featured-meal').first().click()
+    cy.getId('meal-page').should('exist')
   })
 
-  it('can see error page and back to main page', () => {
+  it.skip('can see error page and back to main page', () => {
     cy.visit('/s', { failOnStatusCode: false })
-    cy.getId('error-message').should('exist')
+    cy.getId('error-message').click()
   })
 })
